@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+<h1>@ViewData["Title"]</h1>
+@model Person
+
+<form asp-action="CreateForm" asp-controller="Home">
+    <label class="mt-4">სახელი: </label>
+    <input class="form-control" type="text" placeholder="სახელი" asp-for="saxeli" />
+    <label class="mt-4">გვარი: </label>
+    <input class="form-control" type="text" placeholder="გვარი" asp-for="gvari" />
+    <label class="mt-4">მისამართი: </label>
+    <input class="form-control" type="text" placeholder="მისამართი" asp-for="misamarti" />
+    <label class="mt-4">ტელეფონი: </label>
+    <input class="form-control" type="text" placeholder="ტელეფონი" asp-for="telefoni" />
+    <label class="mt-4">ასაკი: </label>
+    <input class="form-control" type="number" placeholder="ასაკი" asp-for="asaki" />
+    <button class="btn btn-primary mt-4" type="submit">დამატება</button>
+     
+</form>
